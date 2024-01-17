@@ -17,8 +17,20 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1s ease-out; /* Add fade-in animation */
+  position: relative;
   box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.8); /* Add edge lighting effect */
+  animation: waveAnimation 3s infinite alternate; /* Add wave animation */
 }
+
+@keyframes waveAnimation {
+  from {
+    box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.8);
+  }
+  to {
+    box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.3); /* Adjust the alpha value for a softer effect */
+  }
+}
+
 
 @keyframes fadeIn {
   from {
