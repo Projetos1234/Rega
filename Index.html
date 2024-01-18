@@ -15,7 +15,7 @@
   <div id="humidity">Humidade do <span class="green">ar</span>: <span id="humidity-value">0</span>%</div>
   <div id="soil-humidity">Humidade do <span class="green">solo</span>: <span id="soil-humidity-value">0</span>%</div>
   <div id="status">Status da <span class="green">conexão</span>:  <span id="status-value">Desconectado</span></div>
-  <div id="status">Necessidade de <span class="green">rega</span>: <span id="status-value">Desconectado</span></div>
+  <div id="status">Necessidade de <span class="green">rega</span>: <span id="rega-value">Não</span></div>
 </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.js"></script>
@@ -45,6 +45,7 @@
       document.getElementById('humidity-value').textContent = data.airHumidity.toFixed(2);
       document.getElementById('soil-humidity-value').textContent = data.soilHumidity.toFixed(2);
       document.getElementById('status-value').textContent = data.espStatus;
+      document.getElementById('rega-value').textContent = data.regaStatus;
     });
   </script>
 </body>
