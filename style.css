@@ -55,6 +55,7 @@ h1 {
 #temp-value,
 #humidity-value,
 #soil-humidity-value,
+#rega-value,
 #status-value {
   font-weight: bold;
   color: #00ffcc;
