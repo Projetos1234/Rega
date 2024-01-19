@@ -30,8 +30,8 @@
         const dataContainer = document.getElementById('data-container');
         dataContainer.style.display = 'block';
 
-        const elementsToAnimate = document.querySelectorAll('.animação-inicial span');
-        elementsToAnimate.forEach(element => {
+        const elementos_a_animar = document.querySelectorAll('.animação-inicial span');
+        elementos_a_animar.forEach(element => {
           element.classList.add('animação', 'fadeIn');
         });
       }, 2000); // Set the delay in milliseconds (2 seconds in this case)
