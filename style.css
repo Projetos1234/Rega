@@ -65,7 +65,7 @@ h1 {
   transition: opacity 0.3s ease-out;
 }
 
-.animated {
+.animação {
   opacity: 1; /* Set to 1 for the initial state to be visible */
 }
 
