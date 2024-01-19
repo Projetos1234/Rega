@@ -45,18 +45,19 @@ h1 {
   color: #007bff;
 }
 
-#temperature,
-#humidity,
-#soil-humidity,
-#status {
+#temperatura_ar,
+#humidade_ar,
+#humidade_do_solo,
+#conexão-esp,
+#necessidade_rega {
   margin: 15px 0;
 }
 
-#temp-value,
-#humidity-value,
-#soil-humidity-value,
-#rega-value,
-#status-value {
+#valor-temperatura-ar,
+#valor-humidade-ar,
+#valor-humidade-solo,
+#necessidade-rega,
+#estado-da-conexão {
   font-weight: bold;
   color: #00ffcc;
   display: inline-block;
@@ -96,7 +97,7 @@ h1 {
     transform: scale(1.5);
   }
 }
-.green {
+.palavras-a-verde {
   color: #007bff; /* Green color */
 }
 
