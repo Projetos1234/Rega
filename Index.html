@@ -18,10 +18,7 @@
   <div id="conexão-esp">Status da <span class="palavras-a-verde">conexão</span>:  <span id="estado-da-conexão">Desconectado</span></div>
 </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.js"></script>
   <script>
-    const socket = io();
-
     // Show loading dots with a delay
     document.addEventListener('DOMContentLoaded', () => {
       const loadingContainer = document.getElementById('carregar');
@@ -40,13 +37,6 @@
       }, 2000); // Set the delay in milliseconds (2 seconds in this case)
     });
 
-    socket.on('updateData', (data) => {
-      document.getElementById('temp-value').textContent = data.airTemperature.toFixed(2);
-      document.getElementById('humidity-value').textContent = data.airHumidity.toFixed(2);
-      document.getElementById('soil-humidity-value').textContent = data.soilHumidity.toFixed(2);
-      document.getElementById('status-value').textContent = data.espStatus;
-      document.getElementById('rega-value').textContent = data.regaStatus;
-    });
   </script>
 </body>
 </html>
